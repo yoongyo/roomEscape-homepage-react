@@ -5,7 +5,7 @@ import exampleImg from '../img/mos.jpg';
 export const BookingRoom = () => {
     return (
         <div>
-        <div className="rounded-2xl bg-gray-700 p-5 mb-5">
+        <div className="rounded-2xl bg-gray-700 p-5 mb-5 border-4 border-gray-700 hover:border-yellow-300">
             <button className="relative mb-4">
                 <img className="rounded-2xl" src={exampleImg}/>
                 <div className="absolute bottom-0 bg-black bg-opacity-80 w-full text-center rounded-b-2xl p-2">
