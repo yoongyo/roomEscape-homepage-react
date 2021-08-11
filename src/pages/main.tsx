@@ -6,9 +6,11 @@ import { Header } from '../components/header';
 
 export const Main = () => {
     return (
-        <div className="container px-4">
+        <div className="container">
             <Header/>
-            <BookingRoom/>
+            <div className="px-4">
+                <BookingRoom/>
+            </div>
         </div>
     )
 }
