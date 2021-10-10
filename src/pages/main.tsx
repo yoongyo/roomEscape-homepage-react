@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import { BookingRoom } from '../components/bookingRoom';
-import { Header } from '../components/header';
+import { BookingRoom } from '../components/booking/bookingRoom';
+import { Header } from '../components/layout/header/header';
 
 
 

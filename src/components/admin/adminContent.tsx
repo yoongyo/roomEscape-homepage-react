@@ -6,7 +6,8 @@ import '../../styles/fontawesome.css';
 import { useHistory } from 'react-router-dom';
 import { AdminTable } from './adminTable';
 import { AdminTables } from './adminTables';
-import { CreateTheme } from './createTheme';
+import { AdminThemeForm } from './adminThemeForm';
+import { AdminPreview } from './adminPreview';
 
 export const AdminContent = ({handleCollapsedChange}:any) => {
     let history = useHistory();
@@ -30,7 +31,10 @@ export const AdminContent = ({handleCollapsedChange}:any) => {
             </div>
             <div className="w-full bg-secondary p-6">
                 {/* <AdminTables pathName={pathName}/> */}
-                <CreateTheme/>
+                <div className="flex flex-row bg-white">
+                    <AdminThemeForm/>
+                    <AdminPreview/>
+                </div>
             </div>
         </div>
     )
