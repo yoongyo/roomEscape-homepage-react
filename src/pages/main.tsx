@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { BookingRoom } from '../components/booking/bookingRoom';
 import { Header } from '../components/layout/header/header';
+import { Theme } from '../components/theme/theme';
 
 
 
@@ -16,7 +17,7 @@ export const Main = () => {
             </div>
 
             <div className="px-4">
-                <BookingRoom/>
+                <Theme/>
             </div>
         </div>
     )

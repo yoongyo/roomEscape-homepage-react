@@ -3,9 +3,9 @@ import React from 'react';
 
 export const BookingList = () => {
     return (
-        <div className="">
-            <p className="text-center py-3">오늘 예약자 관리</p>
-            <table className="mx-auto text-center text-xs">
+        <div className="px-1 max-w-6xl mx-auto">
+            <p className="text-center py-10 font-bold text-3xl">오늘 예약자 관리</p>
+            <table className="mx-auto text-center text-mo md:text-2xl w-full">
                 <thead className="border-t border-b">
                     <tr>
                         <th className="py-2">예약자</th>

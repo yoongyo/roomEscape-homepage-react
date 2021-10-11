@@ -13,7 +13,10 @@ export const BookingButton = () => {
 
     return (
         <>
-            <button className="border rounded-3xl p-2 text-center" onClick={modalClick}>11:20<br/>예약 가능</button>
+            <button className="border rounded-3xl text-center py-1 md:py-2" onClick={modalClick}>
+                <p className="text-sm">11:00</p>
+                <p className="text-sm">예약가능</p>
+            </button>
             <ReactModal 
                 isOpen={modal}
                 contentLabel="Connect"
