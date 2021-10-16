@@ -30,8 +30,10 @@ export const BookingInfoModal = ({modal, modalClick}:any) => {
 
 const modalStyles = {
     content: {
+        maxWidth: '400px',
+        width: '96%',
         backgroundColor: '#1b1b1b',
-        top: '20%',
+        top: '35%',
         left: '50%',
         right: 'auto',
         bottom: 'auto',

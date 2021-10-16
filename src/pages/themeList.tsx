@@ -13,7 +13,7 @@ export const ThemeList = () => {
     return ( 
         <div>
             <div className="flex flex-row justify-between py-10">
-                <p className="text-white text-lg my-auto">운영중인 테마 (4)</p>
+                <p className="text-lg my-auto text-booking">운영중인 테마 (4)</p>
                 <button className="border-booking border rounded-3xl px-8 py-2 text-booking" onClick={modalClick}>예약조회</button>
                 <BookingInfoModal modal={modal} modalClick={modalClick}/>
             </div>

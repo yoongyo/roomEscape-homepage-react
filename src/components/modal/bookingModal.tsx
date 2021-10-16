@@ -14,23 +14,23 @@ export const BookingModal = ({modal, modalClick}:any) => {
                     <p className="mr-6">몬스터하우스</p>
                     <p>11:40</p>
                 </div>
-                <div className="flex flex-row py-2">
-                    <div className=" whitespace-nowrap w-2/4">
+                <div className="flex flex-row py-2 h-12">
+                    <div className=" whitespace-nowrap w-2/4 my-auto">
                         예약자
                     </div>
-                    <input className="w-full rounded-md"/>
+                    <input className="w-full rounded-md text-black"/>
                 </div>
-                <div className="flex flex-row py-2">
-                    <div className="whitespace-nowrap w-2/4">
+                <div className="flex flex-row py-2 h-12">
+                    <div className="whitespace-nowrap w-2/4 my-auto">
                         예약자
                     </div>
-                    <input className="w-full rounded-md"/>
+                    <input className="w-full rounded-md text-black"/>
                 </div>
-                <div className="flex flex-row py-2">
-                    <div className="whitespace-nowrap w-2/4">
+                <div className="flex flex-row py-2 h-12">
+                    <div className="whitespace-nowrap w-2/4 my-auto">
                         메모
                     </div>
-                    <input className="w-full rounded-md"/>
+                    <input className="w-full rounded-md text-black"/>
                 </div>
                 <div className="text-booking py-6">
                     <p>* 취소나 변경 희망시 매장으로 연락주시면 감사드리겠습니다.</p>
@@ -47,6 +47,7 @@ export const BookingModal = ({modal, modalClick}:any) => {
 
 const modalStyles = {
     content: {
+        maxWidth: '400px',
         width: '96%',
         backgroundColor: '#1b1b1b',
         top: '35%',

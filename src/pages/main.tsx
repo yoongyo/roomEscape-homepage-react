@@ -5,6 +5,7 @@ import { Theme } from '../components/theme/theme';
 import {Map, GoogleApiWrapper} from 'google-maps-react';
 import { Info } from './info';
 import { ThemeList } from './themeList';
+import { Footer } from '../components/layout/footer/footer';
 
 export const Main = () => {
     const [bookingMode, setBookingMode] = useState(true);
@@ -18,7 +19,7 @@ export const Main = () => {
     }
 
     return (
-        <div className="bg-main py-10 min-h-screen text-primary">
+        <div className="bg-main pt-10 min-h-screen text-primary">
             <div className="max-w-3xl mx-auto">
                 {bookingMode ? (
                     <div className="mx-auto w-full px-4 flex py-8">
@@ -40,6 +41,7 @@ export const Main = () => {
                     <Info/>
                 )}
             </div>
+            <Footer/>
         </div>
     )
 }

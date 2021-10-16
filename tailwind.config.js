@@ -26,7 +26,8 @@ module.exports = {
       },
       textColor: {
         'booking': '#fcc81c',
-        'primary': '#FFFFFF'
+        'primary': '#FFFFFF',
+        'cancel': '#979797'
       }
     }
   },

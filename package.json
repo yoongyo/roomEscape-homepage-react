@@ -31,6 +31,7 @@
     "react-modal": "^3.14.3",
     "react-modern-drawer": "^0.1.1",
     "react-pro-sidebar": "^0.7.1",
+    "react-rating": "^2.0.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "sass": "^1.42.1",
