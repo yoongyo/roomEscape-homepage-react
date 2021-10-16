@@ -17,7 +17,8 @@ module.exports = {
       backgroundColor: {
         'booking': '#fcc81c',
         'theme': '#252525',
-        'main': '#1b1b1b'
+        'main': '#1b1b1b',
+        'cancel': '#979797'
       },
       borderColor: {
         'theme': '#252525',
