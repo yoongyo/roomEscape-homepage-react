@@ -34,13 +34,11 @@ export const Main = () => {
                 )}
             </div>
 
-            <div className="px-4 max-w-5xl mx-auto">
-                {bookingMode ? (
-                    <ThemeList/>
-                ) : (
-                    <Info/>
-                )}
-            </div>
+            {bookingMode ? (
+                <ThemeList/>
+            ) : (
+                <Info/>
+            )}
             <Footer/>
         </div>
     )
