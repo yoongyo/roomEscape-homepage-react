@@ -18,7 +18,7 @@ export const AdminNav = ({collapsed}:any) => {
                             <Link to="/admin/booking">예약</Link>
                         </MenuItem>
                         <MenuItem>                            
-                            <Link to="/admin/board">게시판</Link>
+                            <Link to="/admin/board">인원별 가격</Link>
                         </MenuItem>
                     </SubMenu>
                 </Menu>

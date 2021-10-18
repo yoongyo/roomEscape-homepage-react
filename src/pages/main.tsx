@@ -21,6 +21,10 @@ export const Main = () => {
     return (
         <div className="bg-main pt-10 min-h-screen text-primary">
             <div className="max-w-3xl mx-auto">
+                <div className="text-center py-8">
+                    <p className="font-bold text-4xl">무비이스케이프</p>
+                </div>
+
                 {bookingMode ? (
                     <div className="mx-auto w-full px-4 flex py-8">
                         <button className="rounded-md py-3 px-10 w-1/2 bg-booking text-black" onClick={onClickBooking}>예약</button>

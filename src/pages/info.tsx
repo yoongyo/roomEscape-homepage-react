@@ -4,7 +4,7 @@ import {Location} from '../components/map/location';
 
 export const Info = () => {
     return (
-        <div>
+        <div className="max-w-5xl mx-auto">
             <div className="flex flex-row justify-between py-10">
                 <p className="text-lg my-auto text-booking">무비이스케이프 안내사항</p>
                 <button className="border rounded-3xl px-8 py-2 border-gray-400">전화걸기</button>
