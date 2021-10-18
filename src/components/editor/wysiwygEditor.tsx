@@ -49,7 +49,7 @@ export const WysiwygEditor = ({register}:any) => {
     
     return (
         <div>
-        <input name="notice" ref={ref} value={content} onChange={ssss}/>
+        <input name="notice" ref={ref} value={content} onChange={s}/>
         <Editor
             placeholder="본문을 적어주세요"
             editorState={editorState}
