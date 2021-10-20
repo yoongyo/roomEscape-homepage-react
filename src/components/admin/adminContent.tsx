@@ -31,9 +31,8 @@ export const AdminContent = ({handleCollapsedChange}:any) => {
             </div>
             <div className="w-full bg-secondary p-6">
                 {/* <AdminTables pathName={pathName}/> */}
-                <div className="flex flex-row bg-white">
+                <div className="bg-white">
                     <AdminThemeForm/>
-                    <AdminPreview/>
                 </div>
             </div>
         </div>

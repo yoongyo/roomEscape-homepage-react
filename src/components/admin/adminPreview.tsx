@@ -2,10 +2,10 @@ import React from 'react';
 import { Theme } from '../theme/theme';
 
 
-export const AdminPreview = () => {
+export const AdminPreview = ({value}:any) => {
     return (
         <div className="p-10">
-            <Theme/>
+            <Theme value={value}/>
         </div>
     )
 }
