@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { useForm, SubmitHandler } from "react-hook-form";
-import { BACKEND_URL, ROOMESCAPE_ID } from '../../api/backendURL';
-import { WysiwygEditor } from '../editor/wysiwygEditor';
+import { BACKEND_URL, ROOMESCAPE_ID } from '../api/backendURL';
+import { WysiwygEditor } from '../components/editor/wysiwygEditor';
 
 type Inputs = {
     name: string,
@@ -16,7 +16,7 @@ type Inputs = {
     longitude: string,
 };
 
-export const AdminCreact = () => {
+export const CreateRoomEscape = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = data => {
         console.log(data);

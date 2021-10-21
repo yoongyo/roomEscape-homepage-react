@@ -4,10 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../styles/fontawesome.css';
 import { useHistory } from 'react-router-dom';
-import { AdminTable } from './adminTable';
-import { AdminTables } from './adminTables';
-import { AdminThemeForm } from './adminThemeForm';
-import { AdminPreview } from './adminPreview';
+import { AdminRouter } from '../../routers/admin-router';
 
 export const AdminContent = ({handleCollapsedChange}:any) => {
     let history = useHistory();
@@ -30,10 +27,7 @@ export const AdminContent = ({handleCollapsedChange}:any) => {
                 </button>
             </div>
             <div className="w-full bg-secondary p-6">
-                {/* <AdminTables pathName={pathName}/> */}
-                <div className="bg-white">
-                    <AdminThemeForm/>
-                </div>
+                <AdminRouter/>
             </div>
         </div>
     )
