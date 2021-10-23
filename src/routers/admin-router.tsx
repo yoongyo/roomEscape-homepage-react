@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom
 import { AdminHome } from '../components/admin/adminHome';
 import { AdminPopup } from '../components/admin/adminPopup';
 import { AdminPrice } from '../components/admin/adminPrice';
-import { AdminRoomEscape } from '../components/admin/AdminRoomEscape';
+import { AdminRoomEscape } from '../components/admin/adminRoomEscape';
 import { AdminThemeForm } from '../components/admin/adminThemeForm';
 import { AdminThemeList } from '../components/admin/adminThemeList';
 
