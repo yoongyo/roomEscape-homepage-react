@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import TimePicker from '@mui/lab/TimePicker';
 import { Path, useForm, UseFormRegister, SubmitHandler } from "react-hook-form";
 import { AdminPreview } from './adminPreview';
+import { BACKEND_URL, ROOMESCAPE_ID } from '../../api/backendURL';
 
 
 interface IFormValues  {
@@ -68,7 +69,18 @@ export const AdminThemeForm = () => {
     const { register, handleSubmit, watch, formState: {errors}} = useForm();
 
     const onSubmit = () => {
-        
+        fetch(BACKEND_URL + 'themes/' + ROOMESCAPE_ID, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(watch())
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
+        console.log(watch())
     }
 
     return (
@@ -94,6 +106,9 @@ export const AdminThemeForm = () => {
                     <NumberInput label="minHeadcount" labelText="최소 인원" register={register} required placeholder="2"/>
                     <NumberInput label="maxHeadcount" labelText="최대 인원" register={register} required placeholder="5"/>
                     <TextField label="description" labelText="스토리" register={register} required placeholder="스토리를 작성해주세요."/>
+                    <div className="flex justify-end py-3 px-3">
+                        <button className="bg-booking rounded-lg px-6 py-2">생성</button>
+                    </div>
                 </form>
             </div>
             <AdminPreview value={watch()}/>

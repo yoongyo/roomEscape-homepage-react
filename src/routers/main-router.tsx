@@ -11,7 +11,7 @@ export const MainRouter = () => {
     return (
         <Router>
             <Switch>
-                <Route path="/super/roomEcape/create" component={CreateRoomEscape}/>
+                <Route path="/super" component={CreateRoomEscape}/>
                 <Route path="/admin" component={Admin}/>
                 <Route path="/" exact component={Main}/>
                 <Route path="/booking" component={BookingList}/>

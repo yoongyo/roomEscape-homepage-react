@@ -22,11 +22,6 @@ export const CreateRoomEscape = () => {
         console.log(data);
     }
 
-    useEffect(()=>{
-        console.log(watch());
-    }, [watch()])
-
-
     const onClick = () => {
         fetch(BACKEND_URL + 'admin/roomEscape', {
             method: 'POST',
