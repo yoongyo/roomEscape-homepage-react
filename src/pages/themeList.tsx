@@ -7,20 +7,22 @@ import { Theme } from '../components/theme/theme';
 
 export const ThemeList = () => {
     const [themes, setThemes] = useState([]);
-    // useEffect(() => {
-    //     fetch(BACKEND_URL + ROOMESCAPE_ID, {
-    //         method: 'GET',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         }
-    //     })
-    //     .then(res => res.json())
-    //     .then(json => {
-    //         setThemes(json);
-    //     })
-    // }, [])
-
     const [modal, setModal] = useState(false);
+
+    useEffect(() => {
+        fetch(BACKEND_URL + 'themes/' +ROOMESCAPE_ID, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(res => res.json())
+        .then(json => {
+            console.log(json)
+            setThemes(json);
+        })
+    }, [])
+
 
     const modalClick = () => {
         setModal(!modal);        
